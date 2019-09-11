@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+<body>
+  <h1>Object Prototype Example</h1>
+  <script>
+  function Student()
+  {
+    this.name='Sneha';
+    this.gender='Female';
+  }
+  var stdObj=new Student();
+Student.prototype.sayHello=function()
+  {
+alert("Hello");
+};
+var stdObj1=new Student();
+var proto=Object.getPrototypeOf(stdObj);
+alert(proto.constructor);
+</script>
+</body>
+</html>
